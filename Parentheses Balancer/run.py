@@ -1,3 +1,9 @@
+def assertTest(input, result):
+    if valid_parentheses(input) == result:
+        print(input + "," + str(result) +", Test has passed")
+    else:
+        print(input + "," + str(result) +", Test has failed")
+
 def valid_parentheses(string):
     if string == "":
         return True
@@ -15,3 +21,5 @@ def valid_parentheses(string):
         return False
     else:
         return True
+
+assertTest("(Ssadsadsadasd()", False)
